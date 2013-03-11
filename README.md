@@ -76,7 +76,7 @@ Swipe exposes a few functions that can be useful for script control of your slid
 
 
 ## Requirements
-[Modernizer](http://modernizr.com/download/) with csstransitions is required for the library to run.
+[Modernizr](http://modernizr.com/download/) with csstransitions is required for the library to run.
 
 [jQuery](http://jquery.com/) is required for backwards compability, if csstransitions is not supported by the browser.
 
