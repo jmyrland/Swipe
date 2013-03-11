@@ -37,7 +37,7 @@ Swipe can take an optional second parameter– an object of key/value settings:
 
 -	**speed** Integer *(default:300)* - speed of prev and next transitions in milliseconds.
 
-- **breakPoint** Integer *(default:0) - specifies which breakpoint width to change from fading to sliding.
+- **breakPoint** Integer *(default:0)* - specifies which breakpoint width to change from fading to sliding.
 
 - **auto** Integer - begin with auto slideshow (time in milliseconds between slides)
 
@@ -51,7 +51,7 @@ window.mySwipe = new Swipe(document.getElementById('slider'), {
 	startSlide: 2,
 	speed: 400,
 	breakPoint: 1024,
-    	auto: 3000,
+    auto: 3000,
 	callback: function(event, index, elem) {
 
 	  // do something cool
