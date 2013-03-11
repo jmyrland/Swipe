@@ -37,6 +37,8 @@ Swipe can take an optional second parameter– an object of key/value settings:
 
 -	**speed** Integer *(default:300)* - speed of prev and next transitions in milliseconds.
 
+- **breakPoint** Integer *(default:0) - specifies which breakpoint width to change from fading to sliding.
+
 - **auto** Integer - begin with auto slideshow (time in milliseconds between slides)
 
 -	**callback** Function - runs at the end of any slide change. *(effective for updating position indicators/counters)*
@@ -48,7 +50,8 @@ Swipe can take an optional second parameter– an object of key/value settings:
 window.mySwipe = new Swipe(document.getElementById('slider'), {
 	startSlide: 2,
 	speed: 400,
-    auto: 3000,
+	breakPoint: 1024,
+    	auto: 3000,
 	callback: function(event, index, elem) {
 
 	  // do something cool
@@ -73,15 +76,7 @@ Swipe exposes a few functions that can be useful for script control of your slid
 
 
 ## Requirements
-Swipe requires a device that supports CSS transforms and works best with devices that support touch. Both of these are not required for the code to run since Swipe does not include any feature detection in the core code. This decision was made due to the fact that all mobile web development should already have some sort of feature detection built into the page. I recommend using a custom build of [Modernizr](http://modernizr.com), don't recreate the wheel.
-
-Sample use with Modernizr:
-
-``` js
-if ( Modernizr.csstransforms ) {
-  window.mySwipe = new Swipe(document.getElementById('slider'));
-}
-```
+[Modernizer](http://modernizr.com/download/) with csstransitions is required for the library to run.
 
 This is why I set all elements but the first list item to `display:none`– if the device doesn't pass the feature tests then it will fallback to displaying only the first item.
 
