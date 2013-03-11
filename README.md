@@ -1,4 +1,4 @@
-# Swipe 1.0
+# SwipeFade 1.0 - based on Swipe
 Swipe is a lightweight mobile slider with **1-to-1** touch movement. For more info read the [blog post](http://pr-i.me/AQL2).
 
 ## Demo
@@ -77,6 +77,8 @@ Swipe exposes a few functions that can be useful for script control of your slid
 
 ## Requirements
 [Modernizer](http://modernizr.com/download/) with csstransitions is required for the library to run.
+
+[jQuery](http://jquery.com/) is required for backwards compability, if csstransitions is not supported by the browser.
 
 This is why I set all elements but the first list item to `display:none`– if the device doesn't pass the feature tests then it will fallback to displaying only the first item.
 
