@@ -1,4 +1,4 @@
-# SwipeFade 1.0 - based on Swipe
+# SwipeFade 1.0 - based on [Swipe](https://github.com/bradbirdsall/Swipe)
 Swipe is a lightweight mobile slider with **1-to-1** touch movement. For more info read the [blog post](http://pr-i.me/AQL2).
 
 ## Demo
